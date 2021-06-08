@@ -4,8 +4,8 @@ trigger:
 variables:
   webRepository: 'web'
   tag: '$(Build.BuildId)'
-
-- stage: 'Build'
+- stages:
+-  stage: 'Build'
   displayName: 'Build and push'
   jobs:  
   - job: 'Build'
